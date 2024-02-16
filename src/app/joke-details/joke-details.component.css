@@ -1,0 +1,26 @@
+.product-card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+.large-font{
+  font-size:xxx-large;
+}
+.top-20{
+  position:relative;
+  top:20vh;
+}
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+

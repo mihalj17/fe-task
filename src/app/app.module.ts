@@ -8,6 +8,7 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { JokesComponent } from './jokes/jokes.component';
 import { JokeDetailsComponent } from './joke-details/joke-details.component';
 import { MenuComponent } from './menu/menu.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,11 @@ import { MenuComponent } from './menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

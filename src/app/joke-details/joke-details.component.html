@@ -1,1 +1,11 @@
-<p>joke-details works!</p>
+<div class="product-card">
+    <p><strong>{{joke.joke}}</strong></p>
+    <button (click)="Matko()"
+    [ngClass]="{'green' : joke.isFavorite , 'red': !joke.isFavorite}">
+   >Submit</button>
+    
+    
+  </div>
+
+
+
