@@ -9,6 +9,7 @@ import { JokesComponent } from './jokes/jokes.component';
 import { JokeDetailsComponent } from './joke-details/joke-details.component';
 import { MenuComponent } from './menu/menu.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    
+    FormsModule
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]

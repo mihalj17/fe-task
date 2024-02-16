@@ -9,7 +9,7 @@ import { JokesStateService } from '../service/api/jokesState/jokes-state.service
   styleUrls: ['./jokes.component.css']
 })
 export class JokesComponent {
-     
+ 
   
   jokesNew: Array<JokesRepresentation> = [];
   

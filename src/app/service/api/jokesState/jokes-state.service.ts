@@ -7,12 +7,13 @@ import { JokesRepresentation } from '../models/jokes-representation';
 })
 export class JokesStateService {
  private jokesNewSubject = new BehaviorSubject<JokesRepresentation[]>([]);
-  jokesNew$ = this.jokesNewSubject.asObservable();
+  jokes$ = this.jokesNewSubject.asObservable();
 
   constructor() { }
 
   setJokesNew(jokes: JokesRepresentation[]):void{
     this.jokesNewSubject.next(jokes);
+    localStorage.setItem('Local', JSON.stringify(jokes));
   }
 
   toggleIsFavorite(jokeId: number): void {

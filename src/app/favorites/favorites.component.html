@@ -1,1 +1,5 @@
-<p>favorites works!</p>
+
+<app-joke-details
+  *ngFor="let joke of favoriteJokes"
+  [joke]="joke" (deleteJoke)="deleteFavoriteJoke($event)"
+></app-joke-details>
