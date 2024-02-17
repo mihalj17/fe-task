@@ -14,7 +14,6 @@ import { JokesStateService } from '../service/api/jokesState/jokes-state.service
 )
 export class JokeDetailsComponent {
   jokesNew: Array<JokesRepresentation> = [];
-
   @Input() joke: JokesRepresentation = {};
   @Output() deleteJoke = new EventEmitter<number>();
   
@@ -30,13 +29,9 @@ export class JokeDetailsComponent {
     this.jokesStateService.toggleIsFavorite(jokeId);
     
   }
-
-
   onDeleteJoke(): void {
     this.deleteJoke.emit(this.joke.id);
   }
-  
-  
   
 }
 

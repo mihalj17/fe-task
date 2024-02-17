@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap:  wrap;
-    justify-content:  space-between;
     flex-grow: 1;
-    align-content: stretch;
+    justify-content: flex-start;
+    align-content: space-between;
    
 }

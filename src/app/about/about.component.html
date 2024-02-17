@@ -25,8 +25,8 @@
             [(ngModel)]="message"
             placeholder="Type a message..."
           />
-          <button (click)="sendMessage()" class="button button5">Send</button>
-          <button type="button" class="btn btn-danger button5 button" (click)="closeOnClick()">exit</button>
+          <button (click)="sendMessage()" class="button button5"><mat-icon>send</mat-icon></button>
+          <button type="button" class="btn btn-danger button5 button" (click)="closeOnClick()"><mat-icon>clear</mat-icon></button>
         </div>
         <div class="scrollable-div">
         <div class="chat-view">
@@ -38,7 +38,7 @@
       </div>
       <div class="button-box">
         <button type="button" class="btn btn-danger  button5 button" (click)="openOnClick()" *ngIf="visibleButton">
-           ?
+           <mat-icon>chat</mat-icon>
         </button>
         
       </div>
