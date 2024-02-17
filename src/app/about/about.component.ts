@@ -1,16 +1,19 @@
-import { Component } from '@angular/core';
+import { Component ,ViewEncapsulation} from '@angular/core';
 import { WebSocketService } from '../service/api/WebSocket/web-socket.service';
+
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  styleUrl: './about.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class AboutComponent {
 
   message: string = '';
   messages: string[] = [];
-
+  visible: boolean = false;
+  visibleButton: boolean = true;
   constructor(private websocketService: WebSocketService) {}
 
   ngOnInit(): void {
@@ -33,6 +36,15 @@ export class AboutComponent {
       this.messages.push(text);
     };
     reader.readAsText(blob);
+  }
+  openOnClick()
+  {
+    this.visible = true;
+    this.visibleButton = false;
+  }
+  closeOnClick(){
+    this.visible = false;
+    this.visibleButton = true;
   }
 
 }

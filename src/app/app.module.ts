@@ -10,6 +10,8 @@ import { JokeDetailsComponent } from './joke-details/joke-details.component';
 import { MenuComponent } from './menu/menu.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon'
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,10 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
+    
+    
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]

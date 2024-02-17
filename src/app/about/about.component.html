@@ -1,10 +1,37 @@
-<div>
-    <input type="text" [(ngModel)]="message" placeholder="Type a message...">
-    <button (click)="sendMessage()">Send</button>
+<div class="box">
+  <div class="child-box-1">
+    <div class="card">
+      <img src="assets/Matkooo.jpg" alt="Avatar" style="width: 100%" />
+      <div class="info">
+        <h4><b>Matko Mihalj</b></h4>
+        <p>fdgdffgfggfdgdfgdfdgfdgdfgdfgfdgfdd</p>
+      </div>
+    </div>
   </div>
-  <div>
-    <ul>
-      <li *ngFor="let msg of messages">{{ msg }}</li>
-    </ul>
+  <div class="child-box-2">
+    <div class="chat-box">
+      <div class="chat-box-child" *ngIf="visible">
+        <div class="chat-input">
+          <input
+            type="text"
+            [(ngModel)]="message"
+            placeholder="Type a message..."
+          />
+          <button (click)="sendMessage()" class="button button5">Send</button>
+          <button type="button" class="btn btn-danger button5 button" (click)="closeOnClick()">exit</button>
+        </div>
+        <div class="chat-view">
+          <ul>
+            <li *ngFor="let msg of messages">{{ msg }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-box">
+        <button type="button" class="btn btn-danger  button5 button" (click)="openOnClick()" *ngIf="visibleButton">
+          <mat-icon>contact_support</mat-icon>
+        </button>
+        
+      </div>
+    </div>
   </div>
-  
+</div>
