@@ -1,12 +1,15 @@
 
 .product-card {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 15px;
-  background-color: #fff;
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 5px;
+  
 }
 
 .large-font{
@@ -23,5 +26,16 @@
 .red {
   background-color: red;
 }
+
+.button-box{
+  display: flex;
+  justify-content: center;
+}
+.joke-box{
+  height: 150px;
+  width: 300px;
+}
+
+
 
 

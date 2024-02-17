@@ -1,5 +1,10 @@
-
-<app-joke-details
+<div class="container">
+  <app-joke-details
   *ngFor="let joke of favoriteJokes"
   [joke]="joke" (deleteJoke)="deleteFavoriteJoke($event)"
-></app-joke-details>
+  ></app-joke-details>
+  </div>
+
+
+
+

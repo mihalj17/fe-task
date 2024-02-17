@@ -1,13 +1,13 @@
-
 <div class="product-card">
-    <p><strong>{{joke.joke}}</strong></p>
-    <button (click)="toggleIsFavorite(joke.id!)"
-    [ngClass]="{'green' : joke.isFavorite , 'red': !joke.isFavorite}">
-
-   >Submit</button>
-    
-    
+  <div class="joke-box">
+    <p>
+      <strong>{{ joke.joke }}</strong>
+    </p>
   </div>
-
-
-
+  <div class="button-box">
+    <button
+      (click)="toggleIsFavorite(joke.id!)"
+      [ngClass]="{ green: joke.isFavorite, red: !joke.isFavorite }">Submit
+    </button>
+  </div>
+</div>
