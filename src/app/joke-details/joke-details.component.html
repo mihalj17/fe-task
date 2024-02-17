@@ -6,8 +6,10 @@
   </div>
   <div class="button-box">
     <button
+        class="button"
       (click)="toggleIsFavorite(joke.id!)"
-      [ngClass]="{ green: joke.isFavorite, red: !joke.isFavorite }">Submit
+      [style.color]="joke.isFavorite ? 'red' : 'white'"
+        ><mat-icon>favorite</mat-icon>
     </button>
   </div>
 </div>

@@ -30,10 +30,14 @@
 .button-box{
   display: flex;
   justify-content: center;
+  
 }
 .joke-box{
   height: 150px;
   width: 345px;
+}
+.button{
+  background-color: black;
 }
 
 

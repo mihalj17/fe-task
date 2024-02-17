@@ -33,6 +33,7 @@ export class JokeDetailsComponent {
     this.deleteJoke.emit(this.joke.id);
   }
   
+  
 }
 
 
