@@ -3,14 +3,21 @@
     <div class="card">
       <img src="assets/Matkooo.jpg" alt="Avatar" style="width: 100%" />
       <div class="info">
-        <h4><b>Matko Mihalj</b></h4>
-        <p>fdgdffgfggfdgdfgdfdgfdgdfgdfgfdgfdd</p>
+        <h4><b>Poštovani UHP,</b></h4>
+          Želim iskazati svoju iskrenu zahvalnost što ste mi pružili priliku da riješim kvalifikacijski zadatak.Cijenim vaše povjerenje u moje sposobnosti i predan sam pokazati svoj potencijal u ovom procesu. 
+         
+         Ovaj zadatak doživljavam kao izazov koji s oduševljenjem prihvaćam. Spreman sam uložiti svu svoju energiju i znanje kako bih pružio najbolji mogući rezultat. 
+         
+         Hvala vam još jednom na prilici koju ste mi pružili. Veselim se mogućnosti suradnje s Vama.
+         <p>S poštovanjem,<b>Matko Mihalj</b></p>
+         
+         
       </div>
     </div>
   </div>
   <div class="child-box-2">
-    <div class="chat-box">
-      <div class="chat-box-child" *ngIf="visible">
+    <div class="chat-box ">
+      <div class="chat-box-child"  *ngIf="visible">
         <div class="chat-input">
           <input
             type="text"
@@ -20,15 +27,17 @@
           <button (click)="sendMessage()" class="button button5">Send</button>
           <button type="button" class="btn btn-danger button5 button" (click)="closeOnClick()">exit</button>
         </div>
+        <div class="scrollable-div">
         <div class="chat-view">
           <ul>
             <li *ngFor="let msg of messages">{{ msg }}</li>
           </ul>
         </div>
       </div>
+      </div>
       <div class="button-box">
         <button type="button" class="btn btn-danger  button5 button" (click)="openOnClick()" *ngIf="visibleButton">
-          <mat-icon>contact_support</mat-icon>
+           ?
         </button>
         
       </div>

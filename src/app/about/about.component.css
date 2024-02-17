@@ -1,5 +1,6 @@
 
 .box{
+
   display: grid;
 }
 .child-box-1{
@@ -15,6 +16,12 @@
 .button-box{
   display: flex;
   justify-content: end;
+}
+.chat-box-child{
+  background: rgb(2,0,36);
+  background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  border: 2px solid black;
+  border-radius: 15px 50px;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -39,12 +46,11 @@
     justify-content: center; 
   }
 .chat-box-child{
-  height: 250px;
+  height: 290px;
   background-color: yellow;
 }
   .button {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,102,5,1) 35%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);
     border: none;
     color: white;
     padding: 20px;
@@ -55,4 +61,9 @@
     margin: 4px 2px;
   }
   .button5 {border-radius: 50%;}
+
+  .scrollable-div {
+    height: 200px; 
+    overflow-y: scroll; 
+  }
   
