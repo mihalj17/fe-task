@@ -13,7 +13,7 @@ export class JokesStateService {
 
   setJokesNew(jokes: JokesRepresentation[]):void{
     this.jokesNewSubject.next(jokes);
-    localStorage.setItem('Local', JSON.stringify(jokes));
+    
   }
 
   toggleIsFavorite(jokeId: number): void {
